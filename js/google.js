@@ -88,6 +88,10 @@ if (window.location.href.includes('search?q=Genero+do+filme')) {
 
 }
 
+if (window.location.href.includes('search?q=Capa')){
+    setTimeout(()=>{ window.close(); },10000);
+}
+
 function duploClick(a) {
     if (document.selection) { // IE
         var range = document.body.createTextRange();
