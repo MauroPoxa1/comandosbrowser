@@ -103,9 +103,8 @@ function duploClick(a) {
 
 
 
-//<script src="https://raw.githubusercontent.com/MauroPoxa1/comandosbrowser/main/js/google.js"></script>
-
-
+/*
 var sc = document.createElement('script');
-sc.src="https://raw.githubusercontent.com/MauroPoxa1/comandosbrowser/main/js/google.js";
+sc.src="https://mauropoxa1.github.io/comandosbrowser/js/google.js";
 document.body.appendChild(sc);
+/*
