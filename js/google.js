@@ -103,8 +103,7 @@ function duploClick(a) {
 
 
 
-/*
-var sc = document.createElement('script');
-sc.src="https://mauropoxa1.github.io/comandosbrowser/js/filme.js";
-document.body.appendChild(sc);
-/*
+
+//var sc = document.createElement('script');
+//sc.src="https://mauropoxa1.github.io/comandosbrowser/js/filme.js";
+//document.body.appendChild(sc);
