@@ -105,6 +105,6 @@ function duploClick(a) {
 
 /*
 var sc = document.createElement('script');
-sc.src="https://mauropoxa1.github.io/comandosbrowser/js/google.js";
+sc.src="https://mauropoxa1.github.io/comandosbrowser/js/rede.js";
 document.body.appendChild(sc);
 /*
