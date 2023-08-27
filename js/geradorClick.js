@@ -16,7 +16,7 @@ if (Elemento==='IMG' || Elemento==='IFRAME'
     e.preventDefault();
     console.log("dowlonad");
     dowlonad();
-    alert('Download "'+textH2+'" iniciado!')
+    alert('Download "'+textH2.innerHTML+'" iniciado!')
     setTimeout(()=>{
         document.querySelector("#boxFake > a").click();
     },500);
