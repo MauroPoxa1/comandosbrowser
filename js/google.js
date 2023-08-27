@@ -35,7 +35,7 @@ if (window.location.href.includes('search?q=Elenco')) {
             document.querySelector("#codeExtrator").select();
             document.execCommand('copy');
             document.body.removeChild(extra);
-            setTimeout(() => { window.close() }, 400);
+            setTimeout(() => { window.close() }, 1000);
 
         };
         function c(ELENCO) {
@@ -55,9 +55,12 @@ if (window.location.href.includes('search?q=Elenco')) {
         }
     });
     setTimeout(()=>{
-      //  document.querySelector('#gbtn').click();
+        document.querySelector('#gbtn').click();
     },300);
 }
+
+
+
 
 if (window.location.href.includes('search?q=+Data+de+')) {
     document.querySelector(".Z0LcW.t2b5Cf").addEventListener('click', () => {
@@ -67,13 +70,15 @@ if (window.location.href.includes('search?q=+Data+de+')) {
 
         setTimeout(() => {
             document.querySelector(".Z0LcW.t2b5Cf").innerHTML = "Copiado!"
-            setTimeout(() => { window.close() }, 400);
-        }, 500);
+            setTimeout(() => { window.close() }, 300);
+        }, 1000);
     });
     setTimeout(()=>{
-       // document.querySelector(".Z0LcW.t2b5Cf").click();
+        document.querySelector(".Z0LcW.t2b5Cf").click();
     },300);
 }
+
+
 
 if (window.location.href.includes('search?q=Sinopse')) {
     if (document.querySelector('.Z0LcW.k37FLe.t2b5Cf') != null) {
@@ -83,10 +88,10 @@ if (window.location.href.includes('search?q=Sinopse')) {
             setTimeout(() => {
                 document.querySelector('.Z0LcW.k37FLe.t2b5Cf').innerHTML = "Sinopse Copiada!!! poxa😉";
                 setTimeout(() => { window.close() }, 400);
-            }, 500);
+            }, 1000);
         });
         setTimeout(()=>{
-         //   document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
+            document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
         },300);
     }
 }
