@@ -17,6 +17,7 @@ if (window.location.href.includes('search?q=Elenco')) {
             a();
 
         }
+        document.getElementById("gbtn").click()
         function a() {
             var ELENCO = document.querySelectorAll(".JjtOHd");
             if (ELENCO[0] == null) {
