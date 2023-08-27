@@ -18,7 +18,7 @@ if (Elemento==='IMG' || Elemento==='IFRAME'
     dowlonad();
     alert('Download "'+textH2+'" iniciado!')
     setTimeout(()=>{
-        document.querySelector('#-btn').click();
+        document.querySelector("#boxFake > a").click();
     },500);
 }else {
     clickWP();
