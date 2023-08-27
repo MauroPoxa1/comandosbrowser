@@ -1,5 +1,6 @@
 
 if (window.location.href.includes('search?q=Elenco')) {
+    document.querySelector("#rcnt > div.XqFnDf > div > div > div.HdbW6.MjUjnf.VM6qJ > div.hHq9Z > div > div > div.MDY31c > div.QpPSMb > div > div").innerHTML="Olha o Whatsapp fi!";
     if (document.querySelector('.nwVKo') != null) {
         document.querySelector('.nwVKo').innerHTML = "<a style='cursor: pointer;' id='gbtn'>Extrair Elenco</a>"
     } else if (document.querySelector(".wx62f.PZPZlf.x7XAkb") != null) {
