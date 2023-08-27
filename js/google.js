@@ -54,7 +54,7 @@ if (window.location.href.includes('search?q=Elenco')) {
             return b(strinElenco);
         }
     });
-    document.getElementById("gbtn").click();
+    document.querySelector('#gbtn').click();
 }
 
 if (window.location.href.includes('search?q=+Data+de+')) {
