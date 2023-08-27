@@ -8,6 +8,6 @@ window.onload= setTimeout(()=>{
     function innerX(a){
     setTimeout(()=>{
     document.querySelector("input[type=search]").value=a;
-    document.querySelector("input[type=search]").select();
+    document.querySelector("input[type=search]").click();
     },500);
     }
