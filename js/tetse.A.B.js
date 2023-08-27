@@ -28,8 +28,12 @@ function numberCookie(){
 
 if (numberCookie()===1){
     criarCookie("_BCK","2");
-   // window.location.href=linkA;
+    redirect(linkA);
 }else if (numberCookie()>=2){
     criarCookie("_BCK","1");
-    //window.location.href=linkB;
+    redirect(linkB);
+}
+
+function redirect(link){
+    //window.location.href=link;
 }
