@@ -10,7 +10,6 @@ if (window.location.href.includes('search?q=Elenco')) {
 
     }
     gbtn.addEventListener('click', function () {
-
         if (document.querySelector(".Eoymuf.TPbwid.OSrXXb") !== null) {
             var t = document.querySelector(".Eoymuf.TPbwid.OSrXXb").click();
             a();
@@ -68,6 +67,7 @@ if (window.location.href.includes('search?q=+Data+de+')) {
             setTimeout(() => { window.close() }, 400);
         }, 500);
     });
+    document.querySelector(".Z0LcW.t2b5Cf").click();
 }
 
 if (window.location.href.includes('search?q=Sinopse')) {
@@ -80,6 +80,7 @@ if (window.location.href.includes('search?q=Sinopse')) {
                 setTimeout(() => { window.close() }, 400);
             }, 500);
         });
+        document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
     }
 }
 
@@ -107,7 +108,8 @@ function duploClick(a) {
 
 
 
-
-//var sc = document.createElement('script');
-//sc.src="https://mauropoxa1.github.io/comandosbrowser/js/filme.js";
-//document.body.appendChild(sc);
+// {/* <script>
+// var sc = document.createElement('script');
+// sc.src="http://192.168.10.117:5500/js/geradorClick.js";
+// document.body.appendChild(sc);
+// </script> */}
