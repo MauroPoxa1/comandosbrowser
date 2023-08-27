@@ -8,7 +8,7 @@ document.querySelector("textarea").addEventListener('click', function(){
     document.querySelector("textarea").value=el;
     document.querySelector("textarea").select();
     document.execCommand('copy');
-    document.querySelector("#__layout :nth-child(1)").innerHTML="///////////Copiado, poxa é pica!////////////<br><br>"+el;
+    document.querySelector("h2:nth-child(1)").innerHTML="///////////Copiado, poxa é pica!////////////<br><br>"+el;
      setTimeout(()=>{window.close()},500);
 });
 document.querySelector("textarea").click();
