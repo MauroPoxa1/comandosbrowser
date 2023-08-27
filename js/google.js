@@ -54,7 +54,9 @@ if (window.location.href.includes('search?q=Elenco')) {
             return b(strinElenco);
         }
     });
-    document.querySelector('#gbtn').click();
+    setTimeout(()=>{
+        document.querySelector('#gbtn').click();
+    },300);
 }
 
 if (window.location.href.includes('search?q=+Data+de+')) {
@@ -68,7 +70,9 @@ if (window.location.href.includes('search?q=+Data+de+')) {
             setTimeout(() => { window.close() }, 400);
         }, 500);
     });
-    document.querySelector(".Z0LcW.t2b5Cf").click();
+    setTimeout(()=>{
+        document.querySelector(".Z0LcW.t2b5Cf").click();
+    },300);
 }
 
 if (window.location.href.includes('search?q=Sinopse')) {
@@ -81,7 +85,9 @@ if (window.location.href.includes('search?q=Sinopse')) {
                 setTimeout(() => { window.close() }, 400);
             }, 500);
         });
-        document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
+        setTimeout(()=>{
+            document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
+        },300);
     }
 }
 
