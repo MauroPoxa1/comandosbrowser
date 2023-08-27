@@ -12,5 +12,5 @@ document.querySelector("textarea").addEventListener('click', function(){
      setTimeout(()=>{window.close()},1000);
 });
 setTimeout(()=>{
-    document.querySelector("textarea").click();
+   // document.querySelector("textarea").click();
 },300);
