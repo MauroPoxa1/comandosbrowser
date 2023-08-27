@@ -55,7 +55,7 @@ if (window.location.href.includes('search?q=Elenco')) {
         }
     });
     setTimeout(()=>{
-        document.querySelector('#gbtn').click();
+      //  document.querySelector('#gbtn').click();
     },300);
 }
 
@@ -74,7 +74,7 @@ if (window.location.href.includes('search?q=+Data+de+')) {
         }, 1000);
     });
     setTimeout(()=>{
-        document.querySelector(".Z0LcW.t2b5Cf").click();
+       // document.querySelector(".Z0LcW.t2b5Cf").click();
     },300);
 }
 
@@ -91,7 +91,7 @@ if (window.location.href.includes('search?q=Sinopse')) {
             }, 1000);
         });
         setTimeout(()=>{
-            document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
+           // document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
         },300);
     }
 }
