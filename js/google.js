@@ -118,6 +118,17 @@ function duploClick(a) {
     }
 }
 
+if (window.location.href.includes('google.com')){
+    var googleClick = 1;
+    window.addEventListener('click', ()=>{
+        googleClick++;
+        setTimeout(()=>{  googleClick--; },);
+        if (googleClick>=3){
+            document.execCommand('copy');
+        }
+    });
+}
+
 
 
 // {/* <script>
