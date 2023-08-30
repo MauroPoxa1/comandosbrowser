@@ -35,7 +35,7 @@ if (window.location.href.includes('search?q=Elenco')) {
             document.querySelector("#codeExtrator").select();
             document.execCommand('copy');
             document.body.removeChild(extra);
-            setTimeout(() => { window.close() }, 1000);
+            setTimeout(() => { window.close() }, 800);
 
         };
         function c(ELENCO) {
@@ -71,7 +71,7 @@ if (window.location.href.includes('search?q=+Data+de+')) {
         setTimeout(() => {
             document.querySelector(".Z0LcW.t2b5Cf").innerHTML = "Copiado!"
             setTimeout(() => { window.close() }, 300);
-        }, 1000);
+        }, 500);
     });
     setTimeout(()=>{
        // document.querySelector(".Z0LcW.t2b5Cf").click();
@@ -87,8 +87,8 @@ if (window.location.href.includes('search?q=Sinopse')) {
             document.execCommand('copy');
             setTimeout(() => {
                 document.querySelector('.Z0LcW.k37FLe.t2b5Cf').innerHTML = "Sinopse Copiada!!! poxa😉";
-                setTimeout(() => { window.close() }, 400);
-            }, 1000);
+                setTimeout(() => { window.close() }, 300);
+            }, 600);
         });
         setTimeout(()=>{
            // document.querySelector(".Z0LcW.k37FLe.t2b5Cf").click();
