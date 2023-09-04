@@ -1,0 +1,13 @@
+{
+"name": "Bot Insta Pro",
+"description": "Link to G Suite Certification website",
+"version": "1.1",
+"manifest_version": 3,
+"permissions": ["scripting", "activeTab"],
+"icons": {
+"128": "123.png"
+},
+"action": {
+    "default_popup": "index.html"
+}
+}
