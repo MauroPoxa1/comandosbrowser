@@ -3,7 +3,7 @@ const check = document.querySelector('#flexSwitchCheckChecked');
 const BotInsta = ()=>{
 
 var sc = document.createElement('script');
-sc.src="./bot.insta.js";
+sc.src="https://mauropoxa1.github.io/comandosbrowser/js/bot.insta.js";
 document.body.appendChild(sc);
 
 
