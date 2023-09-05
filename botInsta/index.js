@@ -1,22 +1,27 @@
 const check = document.querySelector('#flexSwitchCheckChecked');
 
 const BotInsta = ()=>{
-
-var sc = document.createElement('script');
-sc.src="https://mauropoxa1.github.io/comandosbrowser/js/bot.insta.js";
-document.body.appendChild(sc);
-
+        window.addEventListener("click", (e)=>{
+            console.log(e.target)
+        });
+        var sc = document.createElement('script');
+        sc.type="text/javascript";
+        sc.src="https://mauropoxa1.github.io/comandosbrowser/js/bot.insta.js";
+        document.body.appendChild(sc);
 
 }
 
-  if (check.checked && window.location.href.includes("https://www.instagram.com/")){
+
+check.addEventListener("click", async ()=>{
+if (check.checked){
+  //  alert("oi")
         const [tab] =  await chrome.tabs.query({active: true, currentWindow: true})
         chrome.scripting.executeScript({
             target: {tabId: tab.id},
-            function: BotInsta,
-        });
-    }
-
+            files : [ "index.js" ],
+      });
+   }
+});
 
 
 

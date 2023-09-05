@@ -34,7 +34,7 @@ function seguirOpen(a){
         open.onclick="";
         pause.onclick=pausaFunction;
         if (!a || !window.location.href.includes('followers')){
-        seletor('.xl565be.x1m39q7l.x1uw6ca5.x2pgyrj:nth-child(2) > a').click();
+        document.querySelector('.xl565be.x1m39q7l.x1uw6ca5.x2pgyrj:nth-child(2) > a').click();
         }
         setTimeout(()=>{
         scroll();
@@ -88,7 +88,7 @@ function intervalo(){
 var scrollCont = 0;
 function scroll(){
     if (100>scrollCont){
-        seletor("._aano").scrollTo(0,seletor("._aano").scrollHeight);
+        document.querySelector("._aano").scrollTo(0,document.querySelector("._aano").scrollHeight);
         setTimeout(()=>{
             scroll();
         },2500);
