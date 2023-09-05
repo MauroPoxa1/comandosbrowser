@@ -31,7 +31,7 @@ if (window.location.href.includes('?autoPlay=')){
 function seguirOpen(a){
    // if (IDpause===0){
         statusi.innerHTML="Ativo";
-        open.onclick="";
+        open.onclick="Alert('Já ativo')";
         pause.onclick=pausaFunction;
         if (!a || !window.location.href.includes('followers')){
         document.querySelector('.xl565be.x1m39q7l.x1uw6ca5.x2pgyrj:nth-child(2) > a').click();
