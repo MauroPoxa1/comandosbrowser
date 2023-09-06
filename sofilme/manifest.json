@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Extensão post sofilme.com",
+    "description": "App de sofilme.com, post, extrator de elenco! encomenda finalizada!",
+    "version": "2.3.1",
+    "icons": {
+        "128": "ico.png" 
+    },
+    "action":{
+        "default_popup": "index.html"
+    },
+    "permissions": ["scripting", "clipboardWrite","clipboardRead" ,"pageCapture","system.storage"],
+    "content_scripts":[
+        {
+        "matches": ["https://www.google.com/*","https://google.com/*"],
+        "js": ["js/index.js"]
+        },{
+            "matches": ["https://redecanais.la/*"],
+            "js": ["js/rede.js"]
+        },{
+            "matches": ["https://warezcdn.com/*"],
+                "js": ["js/filme.js"]
+        }
+    ]
+    
+}

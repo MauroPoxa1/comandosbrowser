@@ -1,10 +1,6 @@
-var seguirFalse = false;
-var IDpause = 0;
-var listaParaSeguir = [];
-var elContas;
-var modoAutomatico = false;
-var divDesSeguir = document.querySelectorAll('.x1ja2u2z.x1afcbsf.x1a2a7pz.x6ikm8r.x10wlt62.x71s49j.x6s0dn4.x78zum5.xdt5ytf.xl56j7k.x1n2onr6');
-
+alert("oi")
+window.onload= function (){
+    setTimeout(()=>{
 var div = document.createElement('div');
 div.width="250px";
 div.height="150px";
@@ -16,11 +12,17 @@ div.innerHTML=`
 <div style="dispay:grid;" id="div">
 <button id="open" onclick="seguirOpen()">Seguir</button>
 <button id="pause">Pausa</button>
-
-<div>
-`;
+</div>`;
 document.body.appendChild(div);
-
+var sc = document.createElement('script');
+sc.type="text/javascript";
+        sc.textContent=`
+var seguirFalse = false;
+var IDpause = 0;
+var listaParaSeguir = [];
+var elContas;
+var modoAutomatico = false;
+var divDesSeguir = document.querySelectorAll('.x1ja2u2z.x1afcbsf.x1a2a7pz.x6ikm8r.x10wlt62.x71s49j.x6s0dn4.x78zum5.xdt5ytf.xl56j7k.x1n2onr6');
 
 if (window.location.href.includes('?autoPlay=')){
     seguirOpen(true);
@@ -29,15 +31,20 @@ if (window.location.href.includes('?autoPlay=')){
 }
 
 function seguirOpen(a){
+   // if (IDpause===0){
         statusi.innerHTML="Ativo";
-        document.querySelector('#open').onclick= function (){alert('Já ativo')};
+        open.onclick="";
         pause.onclick=pausaFunction;
         if (!a || !window.location.href.includes('followers')){
-        document.querySelector('.xl565be.x1m39q7l.x1uw6ca5.x2pgyrj:nth-child(2) > a').click();
+        seletor('.xl565be.x1m39q7l.x1uw6ca5.x2pgyrj:nth-child(2) > a').click();
         }
         setTimeout(()=>{
         scroll();
         },2500);
+     //   setTimeout(()=>{
+       //     buscarContas();
+       // },30500);
+   // }
 }
 
 function buscarContas(){
@@ -48,8 +55,8 @@ function buscarContas(){
             listaParaSeguir.push(x);
       }
       info();
-      if (elContas.length===x+1){}
-        seguirFalse = true;
+      if (elContas.length===x+1)
+      seguirFalse = true;
       if (listaParaSeguir.length<55){
         modoAutomatico = true;
       }
@@ -57,16 +64,14 @@ function buscarContas(){
 }
 
 function playSeguir(){
-    if (seguirFalse===true){
-        if (IDpause<listaParaSeguir.length){
-            elContas[listaParaSeguir[IDpause]].click();
-        //console.log('click');
-        numerosSeguidos.innerHTML= Number(numerosSeguidos.innerHTML)+1;
-        IDpause+=+1;
-        }else {
-            modoAuto();
-        }
-  }
+    if (IDpause<listaParaSeguir.length){
+        elContas[listaParaSeguir[IDpause]].click();
+       console.log('click');
+       numerosSeguidos.innerHTML= Number(numerosSeguidos.innerHTML)+1;
+       IDpause+=+1;
+   }else {
+    modoAuto();
+   }
 }
 
 function ativarSaguir(iten){
@@ -85,7 +90,7 @@ function intervalo(){
 var scrollCont = 0;
 function scroll(){
     if (100>scrollCont){
-        document.querySelector("._aano").scrollTo(0,document.querySelector("._aano").scrollHeight);
+        seletor("._aano").scrollTo(0,seletor("._aano").scrollHeight);
         setTimeout(()=>{
             scroll();
         },2500);
@@ -120,4 +125,8 @@ function modoAuto(){
 
 setInterval(() => {
     playSeguir();
-}, IDpause * 15000);
+}, intervalo());
+        `;
+        document.body.appendChild(sc);
+},3000);
+}

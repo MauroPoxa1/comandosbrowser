@@ -1,0 +1,19 @@
+{
+    "background": {
+        "scripts": [
+            "u.js"
+        ]
+    },
+    "description": "Link to G Suite Certification website",
+    "icons": {
+        "128": "123.png"
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwrY93MspwHTnTfASTXosaV3IauvCoZOrEaYwswKdgKiNL+UZR4Nyp2tbIKNx6R2SmpFFPpbthNEX4hcEYpNh/RmjzhOjDf60+l/kpheJ/QYMQ5/18/u6CXZpIszAe7plLyk29zUcDHajeZdP9g3FBOFk28DqnwTIguh3xwDwZPdN8e/UGTDZ+IzC4+GLRqVHj2VFR/ZPydUH0pbHPXvj6WTL2EhxdVCz5+yMtMZEfJ432wUM7T10x9v5VYH9a9uMethNH8f/C8nhaLKm6PzNMaGVPi1WXSzn77xB+oBCwHUy3vIv8aR853xqG2KnrImrbxtsySo1DAyShIRXS9TDgwIDAQAB",
+    "manifest_version": 2,
+    "name": "Bot Insta Pro 2",
+    "minimum_chrome_version": "55",
+    "permissions": [ "tabs", "storage", "https://*.youtube.com/" ],
+    "short_name": "__MSG_extShortName__",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "0.0.2"
+}
