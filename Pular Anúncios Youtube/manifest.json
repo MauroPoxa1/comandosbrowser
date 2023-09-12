@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "author": "@mauro.poxa",
+    "name": "Skip Ads/Pular Anúncios Youtube",
+    "description":"Pule os Anúncios/ads do Youtube automaticamente!",
+    "version": "1.0.1",
+    "icons":{
+        "128":"ico2.png"
+    },
+    "content_scripts":[{
+        "matches": ["https://*.youtube.com/*","http://*.youtube.com/*"],
+        "js": ["js/youtube.js"]
+    }]
+}

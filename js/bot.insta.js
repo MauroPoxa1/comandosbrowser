@@ -48,8 +48,9 @@ function buscarContas(){
             listaParaSeguir.push(x);
       }
       info();
-      if (elContas.length===x+1){}
-        seguirFalse = true;
+      if (x+1>=elContas.length){
+          seguirFalse = true;
+      }
       if (listaParaSeguir.length<55){
         modoAutomatico = true;
       }
@@ -57,28 +58,20 @@ function buscarContas(){
 }
 
 function playSeguir(){
-    if (seguirFalse===true){
         if (IDpause<listaParaSeguir.length){
             elContas[listaParaSeguir[IDpause]].click();
         //console.log('click');
         numerosSeguidos.innerHTML= Number(numerosSeguidos.innerHTML)+1;
-        IDpause+=+1;
+        IDpause=IDpause+1;
         }else {
             modoAuto();
         }
-  }
 }
 
-function ativarSaguir(iten){
+function ativarSaguir(){
     if (seguirFalse===true){
         playSeguir();
     }
-}
-
-
-function intervalo(){
-    var lista = [180000,185555,250000,210000,200000,190055,235687,187954,198750];
-    return lista[Math.floor(Math.random() * lista.length)];
 }
 
 
@@ -118,6 +111,17 @@ function modoAuto(){
 }
 
 
-setInterval(() => {
-    playSeguir();
-}, IDpause * 15000);
+function intervalo(){
+    //var lista = [180000,185555,250000,210000,200000,190055,235687,187954,198750];
+    //return lista[Math.floor(Math.random() * lista.length)];
+    return IDpause * 150000;
+}
+
+tempo();
+function tempo(){
+    setTimeout(()=>{
+        ativarSaguir();
+       tempo();
+    },  150000);
+}
+

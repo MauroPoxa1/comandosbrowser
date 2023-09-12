@@ -1,0 +1,11 @@
+.btnhot{
+    color: aliceblue;
+    padding: 1rem 0.5rem;
+    border: 0;
+    cursor: pointer;
+    margin: 5px;
+    background-color: blue;
+}
+.btnhot:hover{
+    background-color: rgba(0, 0, 255, 0.699);
+}

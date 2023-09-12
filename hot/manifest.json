@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "author": "@mauro.poxa",
+    "name": "Hot Botão",
+    "description":"Pule os Anúncios/ads do Youtube automaticamente!",
+    "version": "1.0.1",
+    "content_scripts":[{
+        "matches": ["https://*.hotmart.com/pt-br/marketplace/produtos/*","http://*.hotmart.com/pt-br/marketplace/produtos/*"],
+        "js": ["js/hot.js"],
+        "css": ["js/hot.css"]
+    },
+    {
+        "matches": ["https://*.static-media.hotmart.com/*","http://*.static-media.hotmart.com/*"],
+        "js": ["js/hot2.js"]
+    }
+]
+}
