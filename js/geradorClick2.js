@@ -5,6 +5,6 @@ var  ganhosLiskB = "https://bit.ly/3sMuIDP";
 var  ganhosLiskA = "https://bit.ly/3P5vuoc";
 
 document.addEventListener('click', (e)=> {
-
+    e.preventDefault();
     console.log(e.target)
 });
