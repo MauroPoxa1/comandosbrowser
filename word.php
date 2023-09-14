@@ -24,7 +24,7 @@ $jsOpitionTerraAds = str_replace('+-+',"'",$jsOpitionTerraAds);
 	$ads1 = '<iframe data-aa="2255746" src="//ad.a-ads.com/2255746?size=300x250" style="width:300px;height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;"></iframe>';
 	$ads2 = '<div id="106831-2"><script src="//ads.themoneytizer.com/s/gen.js?type=2"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=106831&formatId=2"></script></div>'; //x
 	$ads3 = '<div class="outbrain-tm" id="106831-16"><script src="//ads.themoneytizer.com/s/gen.js?type=16"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=106831&formatId=16"></script></div>';
-	$ads4 = '<script async="async" data-cfasync="false" src="//restlesscompeldescend.com/41a48de79a2d1803572214b2bba9fe3c/invoke.js"></script><div id="container-41a48de79a2d1803572214b2bba9fe3c"></div>';
+	$ads4 = '<script async="async" data-cfasync="false" src="//restlesscompeldescend.com/0d6fc7d3adcf143644d2d50daf30d067/invoke.js"></script><div id="container-0d6fc7d3adcf143644d2d50daf30d067"></div>';
 	$ads5 = $jsOpitionTerraAds;
     $ads6 = '<script type="text/javascript" src="https://cdn.diclotrans.com/sdk/v1/19660/d0cd9a3d75c89718cd01f69abd17c7a2545c8068/lib.js"></script>';
 	$listaADS = [$ads1,$ads2,$ads3,$ads4,$ads5,$ads6];
