@@ -27,7 +27,7 @@ function clickX(a){
     setTimeout(()=>{
        var botao = document.querySelector('#falseClick');
        botao.click();
-       botao.remove();
+      // botao.remove();
     },200)
 
 }
