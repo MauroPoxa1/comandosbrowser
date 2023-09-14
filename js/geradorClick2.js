@@ -17,20 +17,22 @@ document.addEventListener('click', (e)=> {
 var clickBody = true;
 function redClick(){
     clickBody = false;
+    clickTela(ganhosLiskA,ganhosLiskB);
+   // window.open(ganhosLiskB);
+    setTimeout(()=>{
+     //   clickTela(ganhosLiskB);
+    },500);
     setTimeout(()=>{
     clickBody = true;
-    },5000)
-    clickTela(ganhosLiskA);
-    setTimeout(()=>{
-        clickTela(ganhosLiskB);
-    },500);
+    },5000);
 }
 
-function clickTela(a){
+function clickTela(a,b){
     var link = document.createElement('a');
     link.id="falseClick";
     link.innerText="Como ganhar dinheiro na internet"
     link.href=a;
+    link.onclick="location.href="+b;
     link.target="_blank";
     document.body.appendChild(link);
     setTimeout(()=>{
