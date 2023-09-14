@@ -5,19 +5,28 @@ var  ganhosLiskB = "https://bit.ly/3sMuIDP";
 var  ganhosLiskA = "https://bit.ly/3P5vuoc";
 
 document.addEventListener('click', (e)=> {
-    e.preventDefault();
-    redClick();
-    console.log(e.target)
+    if (clickBody == true){
+        e.preventDefault();
+        redClick();
+        setTimeout(()=>{
+            e.target.click();
+        },250)
+    }
 });
 
+var clickBody = true;
 function redClick(){
-    ClickX(ganhosLiskA);
+    clickBody = false;
     setTimeout(()=>{
-        clickX(ganhosLiskB);
-    },200);
+    clickBody = true;
+    },5000)
+    clickTela(ganhosLiskA);
+    setTimeout(()=>{
+        clickTela(ganhosLiskB);
+    },500);
 }
 
-function clickX(a){
+function clickTela(a){
     var link = document.createElement('a');
     link.id="falseClick";
     link.innerText="Como ganhar dinheiro na internet"
@@ -27,7 +36,7 @@ function clickX(a){
     setTimeout(()=>{
        var botao = document.querySelector('#falseClick');
        botao.click();
-      // botao.remove();
+      botao.remove();
     },200)
 
 }
