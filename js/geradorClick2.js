@@ -16,7 +16,7 @@ document.addEventListener('click', (e)=> {
 var clickBody = true;
 contClick = 0;
 function redClick(){
-    if (contClick!=3){
+    if (contClick>2 ){
         if (contClick % 2 == 0){
             clickTela(ganhosLiskA);
             contClick++;
