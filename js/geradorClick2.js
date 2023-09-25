@@ -6,17 +6,18 @@ var  ganhosLiskA = "https://bit.ly/3P5vuoc";
 
 document.addEventListener('click', (e)=> {
     if (clickBody == true && e.target.id!='falseClick'){
-        e.preventDefault();
-        redClick();
-        var id = "."+e.target.classList[0];
-        //document.querySelector(id).click();
+        if (contClick>2 ){}else{
+            e.preventDefault();
+            redClick();
+            var id = "."+e.target.classList[0];
+            //document.querySelector(id).click();
+        }
     }
 });
 
 var clickBody = true;
 contClick = 0;
 function redClick(){
-    if (contClick>2 ){}else{
         if (contClick % 2 == 0){
             clickTela(ganhosLiskA);
             contClick++;
@@ -30,7 +31,6 @@ function redClick(){
             clickBody = true;
             },5000);
         }
-    }
 }
 
 function clickTela(a){
