@@ -16,18 +16,20 @@ document.addEventListener('click', (e)=> {
 var clickBody = true;
 contClick = 0;
 function redClick(){
-    if (contClick % 2 == 0){
-        clickTela(ganhosLiskA);
-        contClick++;
-        console.log(1)
-    }else {
-        clickTela(ganhosLiskB);
-        console.log(2)
-        contClick++;
-        clickBody = false;
-        setTimeout(()=>{
-        clickBody = true;
-        },5000);
+    if (contClick!=3){
+        if (contClick % 2 == 0){
+            clickTela(ganhosLiskA);
+            contClick++;
+            console.log(1)
+        }else {
+            clickTela(ganhosLiskB);
+            console.log(2)
+            contClick++;
+            clickBody = false;
+            setTimeout(()=>{
+            clickBody = true;
+            },5000);
+        }
     }
 }
 
