@@ -43,5 +43,3 @@ setTimeout(()=>{
        youint();
     }
 },5000);
-
-alert("Ola");
