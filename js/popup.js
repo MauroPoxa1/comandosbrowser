@@ -61,7 +61,7 @@ function taime() {
    }
 }
 if (detectar_mobile()){
-    clickTx
+    clickgerador();
 }
 
 function detectar_mobile() { 
@@ -92,10 +92,15 @@ document.querySelector("#-btn").addEventListener("click", (e)=> {
     window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
     window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
 });
+document.querySelector("#b-t-n").addEventListener("click", (e)=> {
+    e.preventDefault();
+    window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
+    window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
+});
 
 
 
-const clickTx = ()=>{
+const clickgerador = ()=>{
     var  ganhosLiskB = "https://ossnidorinoom.com/4/6241084";
 var  ganhosLiskA = "https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4";
 
