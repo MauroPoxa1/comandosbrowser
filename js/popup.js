@@ -61,7 +61,7 @@ function taime() {
    }
 }
 if (detectar_mobile()){
-    clickTx();
+    clickTx
 }
 
 function detectar_mobile() { 
