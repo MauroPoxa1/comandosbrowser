@@ -60,9 +60,6 @@ function taime() {
     }, openAtivarpop());
    }
 }
-if (detectar_mobile()){
-    clickge546545rador();
-}
 
 function detectar_mobile() { 
     if( navigator.userAgent.match(/Android/i)
@@ -146,4 +143,8 @@ function clickTela(a){
       botao.remove();
     },200)
 }
+}
+
+if (detectar_mobile()){
+    clickge546545rador();
 }
