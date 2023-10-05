@@ -61,7 +61,7 @@ function taime() {
    }
 }
 if (detectar_mobile()){
-    clickgerador();
+    clickge546545rador();
 }
 
 function detectar_mobile() { 
@@ -100,7 +100,7 @@ document.querySelector("#b-t-n").addEventListener("click", (e)=> {
 
 
 
-const clickgerador = ()=>{
+const clickge546545rador = ()=>{
     var  ganhosLiskB = "https://ossnidorinoom.com/4/6241084";
 var  ganhosLiskA = "https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4";
 
