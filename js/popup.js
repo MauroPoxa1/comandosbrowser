@@ -17,16 +17,18 @@ const openG = (a) => {
 
 if (!detectar_mobile()){
     window.addEventListener("click", (e) => {
-        if (localStorage.janelaAtiva == "true") {
-            if (janela == true) {
-                e.preventDefault();
-                openG();
-            } else
-                if (janelaHref == true) {
-                    janelaHref = false;
-                    openHref();
-                }
-        }
+        if (e.target.localName!="button"){
+            if (localStorage.janelaAtiva == "true") {
+                if (janela == true) {
+                    e.preventDefault();
+                    openG();
+                } else
+                    if (janelaHref == true) {
+                        janelaHref = false;
+                        openHref();
+                    }
+            }
+       }
     });
 }
 
@@ -78,7 +80,7 @@ function detectar_mobile() {
 }
 
 const clickge546545rador = ()=>{
-    var  ganhosLiskB = "https://ossnidorinoom.com/4/6241084";
+var  ganhosLiskB = "https://ossnidorinoom.com/4/6241084";
 var  ganhosLiskA = "https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4";
 
 document.addEventListener('click', (e)=> {
@@ -127,16 +129,16 @@ function clickTela(a){
 
 if (detectar_mobile()){
     clickge546545rador();
-    document.querySelector("#b-t-n").addEventListener("click", (e)=> {
-        e.preventDefault();
-        window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
-        window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
-    });
+    // document.querySelector("#b-t-n").addEventListener("click", (e)=> {
+    //     e.preventDefault();
+    //     window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
+    //     window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
+    // });
 }else{
-    document.querySelector("#-btn").addEventListener("click", (e)=> {
-        e.preventDefault();
-        window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
-        window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
-    });
+    // document.querySelector("#-btn").addEventListener("click", (e)=> {
+    //     e.preventDefault();
+    //     window.open("https://geradordelinkwhatsapp.app.br/wp-content/uploads/2023/08/cursos.rar");
+    //     window.location.href="https://viagemmais.nl/fdfd?u=bit.ly/download-dos-cursos-free";
+    // });
 }
 
