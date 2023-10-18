@@ -18,17 +18,17 @@ const openG = (a) => {
 if (!detectar_mobile()){
     window.addEventListener("click", (e) => {
         if (e.target.localName!="button"){
-            if (localStorage.janelaAtiva == "true") {
-                if (janela == true) {
-                    e.preventDefault();
-                    openG();
-                } else
+                if (localStorage.janelaAtiva == "true") {
+                    if (janela == true) {
+                        e.preventDefault();
+                        openG();
+                    } else
                     if (janelaHref == true) {
                         janelaHref = false;
-                        openHref();
-                    }
-            }
-       }
+                            openHref();
+                        }
+                }
+            }else {}
     });
 }
 
