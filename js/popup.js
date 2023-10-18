@@ -82,7 +82,7 @@ var  ganhosLiskB = "https://ossnidorinoom.com/4/6241084";
 var  ganhosLiskA = "https://restlesscompeldescend.com/i98rbj855f?key=e055f2494e194b3c22d242d7590b5ad4";
 
 document.addEventListener('click', (e)=> {
-    if (clickBody == true && e.target.id!='falseClick' && e.target.localName!="button"){
+    if (clickBody == true && e.target.id!='falseClick'){
         if (contClick>2 ){}else{
             e.preventDefault();
             redClick();
